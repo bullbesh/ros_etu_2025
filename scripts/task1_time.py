@@ -9,4 +9,4 @@ def display_current_time():
         time.sleep(5)
 
 if name == "__main__":
-    display_current_time()
+        display_current_time()
