@@ -8,5 +8,5 @@ def display_current_time():
         print(f"\rCurrent time: {current_time}", end="", flush=True)
         time.sleep(5)
 
-if name == "__main__":
+if __name__ == "__main__":
         display_current_time()
