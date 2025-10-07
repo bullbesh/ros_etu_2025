@@ -3,10 +3,7 @@
 import time
 from datetime import datetime
 
-def display_current_time():
+while True:
         current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        print(f"\rCurrent time: {current_time}", end="", flush=True)
+        print(f"\rCurrent time: {current_time}")
         time.sleep(5)
-
-if __name__ == "__main__":
-        display_current_time()
