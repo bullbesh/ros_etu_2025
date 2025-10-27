@@ -1,6 +1,6 @@
 <launch>
     <group ns="my_namespace">
-        <node name="listener" pkg="rospy_tutorials" type="listener.py" output="screen"/>
-        <node name="talker" pkg="rospy_tutorials" type="talker.py" output="screen"/>
+        <node name="receiver" pkg="study_pkg" type="receiver.py" output="screen"/>
+        <node name="sender" pkg="study_pkg" type="sender.py" output="screen"/>
     </group>
 </launch>
