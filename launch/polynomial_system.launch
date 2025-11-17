@@ -1,0 +1,15 @@
+<launch>
+    <arg name="polynomial_input_topic" default="polynomial_input" />
+    <arg name="summing_input_topic" default="summing_input" />
+    <arg name="sum_result_topic" default="sum_result" />
+    
+    <node pkg="study_pkg" type="polynominal_node.py" name="polynominal_node" output="screen">
+        <param name="input_topic" value="$(arg polynomial_input_topic)" />
+        <param name="output_topic" value="$(arg summing_input_topic)" />
+    </node>
+    
+    <node pkg="study_pkg" type="summing_node.py" name="summing_node" output="screen">
+        <param name="input_topic" value="$(arg summing_input_topic)" />
+        <param name="output_topic" value="$(arg sum_result_topic)" />
+    </node>
+</launch>

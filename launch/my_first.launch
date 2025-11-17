@@ -1,0 +1,11 @@
+<launch>
+    <arg name="topic_name" default="my_topic" />
+
+    <include file="$(find study_pkg)/launch/another_one.launch">
+        <arg name="topic_name" value="$(arg topic_name)" />
+    </include>
+    
+    <node pkg="study_pkg" type="my_node.py" name="my_node">
+        <param name="topic_name" value="$(arg topic_name)" />
+    </node>
+</launch>

@@ -1,0 +1,8 @@
+<launch>
+    <arg name="topic_name" default="my_topic" />
+    
+    <node pkg="study_pkg" type="another_node.py" name="another_node">
+        <param name="topic_name" value="$(arg topic_name)" />
+        <remap from="original_topic" to="$(arg topic_name)" />
+    </node>
+</launch>
