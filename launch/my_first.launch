@@ -1,6 +1,0 @@
-<launch>
-    <group ns="my_namespace">
-        <node name="receiver" pkg="study_pkg" type="receiver.py" output="screen"/>
-        <node name="sender" pkg="study_pkg" type="sender.py" output="screen"/>
-    </group>
-</launch>

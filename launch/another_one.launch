@@ -1,5 +1,0 @@
-<launch>
-    <include file="$(find study_pkg)/launch/my_first.launch" />
-    <node name="receiver" pkg="study_pkg" type="receiver.py" output="screen"/>
-    <node name="sender" pkg="study_pkg" type="sender.py" output="screen"/>
-</launch>
